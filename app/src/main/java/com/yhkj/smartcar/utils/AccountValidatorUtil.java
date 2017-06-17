@@ -36,11 +36,7 @@ public class AccountValidatorUtil {
      */
     public static final String REGEX_ID_CARD = "(^\\d{18}$)|(^\\d{15}$)";
  
-    /**
-     * 正则表达式：验证URL
-     */
-//    public static final String REGEX_URL = "http(s)?://([\\w-]+\\.)+[\\w-]+(/[\\w ./?%&=]*)?";
- 
+
     /**
      * 正则表达式：验证IP地址
      */
