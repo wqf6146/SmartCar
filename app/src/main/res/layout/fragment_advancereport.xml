@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yhkj.smartcar.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black_bg"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/merge_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="问题详情"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_nor_16"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="0dp"
+        app:layout_heightPercent="30%"
+        android:id="@+id/fa_edit_content"
+        app:layout_widthPercent="90%"
+        android:hint="请写下您的意见或遇到的问题，我们会仔细聆听"
+        android:gravity="start"
+        android:textSize="@dimen/font_nor_14"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grayfont"
+        android:background="@drawable/circle_ll_style_edit_blue"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="联系方式"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_nor_16"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="0dp"
+        app:layout_heightPercent="7%"
+        android:id="@+id/fa_edit_phone"
+        app:layout_widthPercent="90%"
+        android:hint="请写下您的联系，方便我们与您联系"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_nor_14"
+        android:textColorHint="@color/grayfont"
+        android:background="@drawable/circle_ll_style_edit_blue"
+        android:layout_height="0dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="0dp"
+        app:layout_heightPercent="23%"
+        app:layout_widthPercent="100%"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0dp">
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            android:layout_centerInParent="true"
+            app:layout_widthPercent="80%"
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/fa_btn_reports"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/circle_ll_style_blue"
+                android:gravity="center"
+                android:text="提    交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="30%"
+                app:layout_widthPercent="100%" />
+
+            <TextView
+                android:id="@+id/fa_btn_back"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_ll_style_white"
+                android:gravity="center"
+                android:text="返    回"
+                android:textColor="@color/grayfont"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="30%"
+                app:layout_widthPercent="100%" />
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+</com.yhkj.smartcar.view.PercentLinearLayout>

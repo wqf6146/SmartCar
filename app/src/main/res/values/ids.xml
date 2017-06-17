@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="mcv_pager" type="id" />
+    <item name="mcv_left" type="id"/>
+    <item name="mcv_right" type="id"/>
+    <item name="mcv_title" type="id"/>
+
+</resources>

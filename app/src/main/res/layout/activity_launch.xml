@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/ic_bg_launch"
+    android:id="@+id/al_rl_container"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="3 跳过"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:id="@+id/al_tv_skip"
+        android:background="@drawable/square_ll_style_gray"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/if_rl_next"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/dark_bg"
+    >
+
+    <TextView
+        android:id="@+id/if_tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="1.如何查看“车架号”？"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_btn_next" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_line"
+        android:layout_height="1px"/>
+</RelativeLayout>

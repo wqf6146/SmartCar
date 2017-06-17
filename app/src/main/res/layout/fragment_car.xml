@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/ic_nor_carbg"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="翼F V168R已连接"
+        android:id="@+id/fc_tv_cartitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/font_nor_16"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/car_blue"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/fc_img_bg"
+        android:layout_width="0dp"
+        android:layout_below="@+id/fc_tv_cartitle"
+        android:layout_centerHorizontal="true"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_nor_white_car"
+        app:layout_heightPercent="40%"
+        app:layout_widthPercent="70%" />
+
+    <LinearLayout
+        android:id="@+id/fc_ll_drawer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/fc_img_bg"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        app:layout_heightPercent="40%"
+        app:layout_widthPercent="100%">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_ll_click"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_nor_temperature" />
+
+                <TextView
+                    android:id="@+id/fc_tv_car_in_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温度2°C"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <TextView
+                    android:id="@+id/fc_tv_car_out_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="湿度2°C"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_ll_click"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_nor_endurance" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="续航"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <TextView
+                    android:id="@+id/fc_tv_car_endurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_ll_click"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_nor_voltage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电压"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <TextView
+                    android:id="@+id/fc_tv_car_voltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_nor_circlecar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="寻车"
+                    android:textColor="@color/grayfont"
+                    android:textSize="@dimen/font_nor_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fc_btn_position"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_ll_click"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_nor_position" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定位"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fc_btn_track"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_ll_click"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_nor_track" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="轨迹"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.yhkj.smartcar.view.PercentLinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/fn_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_ll_style_gray"
+            android:gravity="center"
+            android:text="车 辆 检 测"
+            android:textColor="@color/grayfont"
+            android:textSize="@dimen/font_nor_16"
+            app:layout_heightPercent="75%"
+            app:layout_widthPercent="80%" />
+    </com.yhkj.smartcar.view.PercentLinearLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

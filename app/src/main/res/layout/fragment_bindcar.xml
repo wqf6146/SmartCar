@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fb_rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/fb_toolbar"
+        layout="@layout/merge_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:id="@+id/fb_ll_tip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/fb_toolbar"
+        android:gravity="center"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定设备后，才可以正常使用APP。"
+            android:textColor="@color/car_blue"
+            android:textSize="@dimen/font_nor_14" />
+    </LinearLayout>
+
+    <com.yhkj.smartcar.view.PercentLinearLayout
+        android:id="@+id/fb_ll_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fb_ll_tip"
+        android:orientation="vertical"
+        app:layout_heightPercent="35%"
+        app:layout_widthPercent="100%">
+
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="85%">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_nor_carnumb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车牌号"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_12" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/fb_edit_carnumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_ll_style_black_phone"
+                    android:hint="请输入车牌号"
+                    android:inputType="text"
+                    android:maxLength="17"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_bg"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <ImageView
+                    android:id="@+id/fb_btn_carnumbclear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_btn_cancel"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp" />
+
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="85%">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_nor_vin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车架号"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_12" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/fb_edit_vin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circle_ll_style_black_password"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:hint="请输入车架号"
+                    android:inputType="text"
+                    android:maxLength="17"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_bg"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <ImageView
+                    android:id="@+id/fb_btn_vinclear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_btn_cancel"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/fb_btn_vinquestion"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_nor_questionmark" />
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="85%">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_nor_equitid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备ID"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_nor_12" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/fb_edit_equitid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circle_ll_style_black_password"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:hint="人工录入或扫描二维码"
+                    android:inputType="text"
+                    android:maxLength="17"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_bg"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <ImageView
+                    android:id="@+id/fb_btn_equitidclear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/fb_btn_scan"
+                    android:src="@mipmap/ic_btn_cancel"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/fb_btn_scan"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/ic_nor_scan" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/fb_btn_equitquestion"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_nor_questionmark" />
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+    </com.yhkj.smartcar.view.PercentLinearLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="100%">
+
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="80%">
+
+            <TextView
+                android:id="@+id/fb_btn_done"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/circle_ll_style_blue"
+                android:gravity="center"
+                android:text="绑       定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="25%"
+                app:layout_widthPercent="100%" />
+
+            <TextView
+                android:id="@+id/fn_btn_service"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_ll_style_black"
+                android:gravity="center"
+                android:text="联系客服"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="25%"
+                app:layout_widthPercent="100%" />
+
+            <TextView
+                android:id="@+id/fn_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_ll_style_white"
+                android:gravity="center"
+                android:text="返       回"
+                android:textColor="@color/grayfont"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="25%"
+                app:layout_widthPercent="100%" />
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

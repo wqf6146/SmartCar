@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black_bg_21"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/merge_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/ff_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="1.怎么看车架号"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <im.delight.android.webview.AdvancedWebView
+        android:layout_width="match_parent"
+        android:id="@+id/ff_webview"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+    </im.delight.android.webview.AdvancedWebView>
+</LinearLayout>

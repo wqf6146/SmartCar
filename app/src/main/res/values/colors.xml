@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+    <color name="viewc">#D1D0D4</color>
+    <color name="default_bg_color">#BDBDBD</color>
+    <color name="default_title_color">#ffffff</color>
+    <color name="default_message_color">#ffffff</color>
+    <color name="default_action_color">#3282e6</color>
+    <color name="tabIndicatorColor">#FF0000</color>
+    <color name="redbar">#FF0000</color>
+    <color name="graybg">#F2F2F2</color>
+    <color name="bg_app">#F1F1F1</color>
+    <color name="toastbg">#AA111111</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
+    <color name="grayline">#D1D1D1</color>
+
+    <color name="homebarbg">#f8f8f8</color>
+
+    <color name="listgraybg">#f2f2f2</color>
+
+    <color name="grayfont">#727070</color>
+
+
+    <color name="bluefont">#3282e6</color>
+
+    <color name="graybtn">#EBEBEB</color>
+    <color name="graybtnfont">#D3D3D3</color>
+
+    <color name="transparency">#00000000</color>
+
+    <color name="jifen">#ff8e38</color>
+    <color name="transparent">#00000000</color>
+    <color name="level">#fcae18</color>
+
+    <color name="bgyellow">#fbac1b</color>
+    <color name="bggrayyellow">#ecba7f</color>
+    <color name="bgblue">#7faee7</color>
+    <color name="bggreen">#57ac3b</color>
+
+
+
+    <color name="gray_bg">#6b6b6b</color>
+    <color name="dark_bg">#575757</color>
+    <color name="gray_font">#8e8e8e</color>
+    <color name="gray_line">#676767</color>
+    <color name="black_bg">#151515</color>
+    <color name="ttbalck_bg">#88151515</color>
+    <color name="black_bg_21">#212121</color>
+    <color name="gray_nav">#333333</color>
+    <color name="car_blue">#1a8cfc</color>
+
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#515151</color>
+    <color name="bgColor_alertview_alert_start">#515151</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">@color/white</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">@color/white</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#4282d5</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">@color/car_blue</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#515151</color>
+    
+    <color name="border_blue">#1a83fc</color>
+</resources>

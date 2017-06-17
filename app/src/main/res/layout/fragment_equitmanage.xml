@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black_bg"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/fe_toolbar"
+        layout="@layout/merge_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fe_rl_btn"
+        android:id="@+id/fe_recycleview"
+        android:layout_below="@+id/fe_toolbar"
+        android:layout_width="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.yhkj.smartcar.view.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="100%"
+        android:id="@+id/fe_rl_btn"
+        android:gravity="center"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/fe_btn_bindnew"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_ll_style_black"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="35%"
+            app:layout_widthPercent="80%">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/ic_nor_bindnew" />
+
+            <TextView
+                android:id="@+id/fn_btn_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="绑定新设备"
+                android:textColor="@color/car_blue"
+                android:textSize="@dimen/font_nor_14" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/fe_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_ll_style_white"
+            android:gravity="center"
+            android:text="返       回"
+            android:textColor="@color/grayfont"
+            android:textSize="@dimen/font_nor_16"
+            app:layout_heightPercent="35%"
+            app:layout_widthPercent="80%" />
+    </com.yhkj.smartcar.view.PercentLinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

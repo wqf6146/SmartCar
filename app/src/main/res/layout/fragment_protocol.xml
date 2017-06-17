@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yhkj.smartcar.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black_bg"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/fp_toolbar"
+        layout="@layout/merge_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <im.delight.android.webview.AdvancedWebView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/fp_webview"
+        android:layout_height="0dp">
+
+    </im.delight.android.webview.AdvancedWebView>
+
+
+    <TextView
+        android:id="@+id/fp_btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circle_ll_style_white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="返    回"
+        android:textColor="@color/grayfont"
+        app:layout_heightPercent="7.2%"
+        app:layout_widthPercent="80%"
+        android:textSize="@dimen/font_nor_14" />
+
+</com.yhkj.smartcar.view.PercentLinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black_bg"
+    android:id="@+id/fl_rl_container"
+    tools:context=".fragment.LoginFragment"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/merge_toolbar"
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="0dp"
+        app:layout_heightPercent="30%"
+        android:id="@+id/fl_rl_head"
+        android:layout_below="@+id/fl_toolbar"
+        app:layout_widthPercent="100%"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            app:layout_heightPercent="80%"
+            app:layout_widthPercent="40%"
+            android:scaleType="centerInside"
+            android:id="@+id/fl_img_head"
+            android:src="@mipmap/ic_nor_head"
+            android:layout_centerInParent="true"
+            android:layout_height="0dp"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <com.yhkj.smartcar.view.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_below="@+id/fl_rl_head"
+        android:orientation="vertical"
+        app:layout_heightPercent="35%"
+        android:gravity="center"
+        app:layout_widthPercent="100%"
+        android:layout_height="0dp">
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_width="0dp"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="80%"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@mipmap/ic_nor_user"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/fl_edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_ll_style_black_phone"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:hint="请输入手机号码"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_bg"
+                    android:textSize="@dimen/font_nor_14" />
+
+                <ImageView
+                    android:id="@+id/fl_btn_phoneclear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_btn_cancel"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_width="0dp"
+            app:layout_heightPercent="20%"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_widthPercent="80%"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@mipmap/ic_nor_password"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fl_edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_ll_style_black_password"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:hint="请输入登录密码"
+                    android:maxLength="13"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_bg"
+                    android:textSize="@dimen/font_nor_14"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/fn_btn_eye"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_btn_eye_1" />
+
+                <ImageView
+                    android:id="@+id/fl_btn_pwdclear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/fn_btn_eye"
+                    android:src="@mipmap/ic_btn_cancel"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="0dp"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="80%"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="0dp">
+
+            <ImageView android:layout_height="20dp"
+                android:id="@+id/fl_cb_autologin"
+                android:src="@mipmap/ic_btn_select_1"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"/>
+            <TextView android:layout_height="wrap_content"
+                android:text="自动登陆"
+                android:textColor="@color/white"
+                android:id="@+id/fl_tv_autologin"
+                android:layout_toRightOf="@+id/fl_cb_autologin"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_nor_14"
+                android:layout_width="wrap_content"/>
+            <TextView android:layout_height="wrap_content"
+                android:textSize="@dimen/font_nor_14"
+                android:text="找回密码"
+                android:id="@+id/fl_tv_findpw"
+                android:textColor="@color/car_blue"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"/>
+        </android.support.percent.PercentRelativeLayout>
+    </com.yhkj.smartcar.view.PercentLinearLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="0dp"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="100%"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0dp">
+        <com.yhkj.smartcar.view.PercentLinearLayout
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="60%"
+            android:layout_centerInParent="true"
+            app:layout_widthPercent="80%"
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/fl_btn_login"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/circle_ll_style_blue"
+                android:gravity="center"
+                android:text="登    录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="43%"
+                app:layout_widthPercent="100%" />
+
+            <TextView
+                android:id="@+id/fl_btn_register"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_ll_style_black"
+                android:gravity="center"
+                android:text="注    册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_nor_14"
+                app:layout_heightPercent="43%"
+                app:layout_widthPercent="100%" />
+        </com.yhkj.smartcar.view.PercentLinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

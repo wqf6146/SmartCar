@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">汽车伴侣</string>
+    
+    <string name="car_in_t">温度%s°C</string>
+    <string name="car_out_t">湿度%s</string>
+    <string name="companyphone">客服电话：%s</string>
+    <string name="cartemp">温度：%s℃</string>
+    <string name="carhumidity">湿度：%s%</string>
+
+    <string name="kilo">里程：%skm</string>
+
+    <string name="listview_header_hint_normal">下拉刷新...</string>
+    <string name="listview_header_hint_release">释放刷新...</string>
+    <string name="listview_loading">努力加载中...</string>
+    <string name="nomore_loading">没有更多内容了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成...</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+
+    <string name="previous">Go to previou</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+
+    <string name="tip_type_not_image">选择的不是图片</string>
+    <string name="tip_no_camera">没有相机</string>
+    <string name="tip_tips">提示</string>
+    <string name="tip_compress">正在压缩照片...</string>
+    <string name="tip_compress_failed">"%1$s 图片压缩失败:%2$s picturePath:%3$s"</string>
+    <string name="msg_crop_failed">"有裁切失败的图片"</string>
+    <string name="msg_compress_failed">"有压缩失败的图片"</string>
+    <string name="msg_crop_canceled">" 取消裁切"</string>
+    <string name="msg_operation_canceled">"操作被取消"</string>
+    <string name="tip_permission_camera">没有使用相机的权限，请在权限管理中开启</string>
+    <string name="tip_permission_storage">没有使用SD卡的权限，请在权限管理中开启</string>
+    <string name="tip_permission_camera_storage">没有使用相机和SD卡的权限，请在权限管理中开启</string>
+
+    <!--custom multipleimageselect -->
+    <string name="album_view">选择图片</string>
+    <string name="image_view">单击选择</string>
+
+    <string name="add">确定</string>
+    <string name="selected">已选</string>
+    <string name="limit_exceeded">最多能选 %d 张</string>
+</resources>
