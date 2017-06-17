@@ -221,7 +221,7 @@ public abstract class BaseFragment extends SupportFragment {
                     sDialog.dismissWithDelay(500);
                 isBackEnable = false;
                 DbHelper.getInstance().configLongDBManager().deleteAll();
-                new AlertView(null, "\n登录过期需要重新登录", null, new String[]{"确定"}, null, _mActivity, AlertView.Style.Alert, new OnItemClickListener() {
+                new AlertView(null, "\n授权过期需要重新登录", null, new String[]{"确定"}, null, _mActivity, AlertView.Style.Alert, new OnItemClickListener() {
                     @Override
                     public void onItemClick(Object o, int position) {
                         if (position==0){
