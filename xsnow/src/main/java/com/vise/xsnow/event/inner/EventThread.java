@@ -6,8 +6,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 事件线程
- * @author: <a href="http://xiaoyaoyou1212.360doc.com">DAWI</a>
- * @date: 2016-12-29 19:02
  */
 public enum EventThread {
     MAIN_THREAD,

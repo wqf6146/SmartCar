@@ -27,8 +27,6 @@ import rx.subjects.Subject;
 
 /**
  * @Description: 下载后台服务
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-16 18:26
  */
 public class DownService extends Service {
     public static final String INTENT_KEY = "vise_download_max_number";

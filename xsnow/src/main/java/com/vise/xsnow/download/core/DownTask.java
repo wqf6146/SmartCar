@@ -19,8 +19,6 @@ import rx.subjects.Subject;
 
 /**
  * @Description: 下载任务
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-16 18:27
  */
 public class DownTask {
     private String url;

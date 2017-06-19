@@ -31,8 +31,6 @@ import rx.functions.Func2;
 
 /**
  * @Description: 下载帮助类
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 21:55.
  */
 public class DownHelper {
     private static final String TEST_RANGE_SUPPORT = "bytes=0-";

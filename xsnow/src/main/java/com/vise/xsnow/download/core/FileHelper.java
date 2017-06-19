@@ -35,8 +35,6 @@ import static java.nio.channels.FileChannel.MapMode.READ_WRITE;
 
 /**
  * @Description:
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 21:57.
  */
 public class FileHelper {
     private static final String TMP_SUFFIX = ".tmp";  //temp file

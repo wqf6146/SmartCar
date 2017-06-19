@@ -19,8 +19,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 下载数据库操作管理
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 22:09.
  */
 public class DownDbManager {
     private volatile static DownDbManager singleton;

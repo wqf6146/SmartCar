@@ -34,8 +34,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 下载管理入口
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 21:03.
  */
 public class ViseDownload {
     private static DownService mDownService;

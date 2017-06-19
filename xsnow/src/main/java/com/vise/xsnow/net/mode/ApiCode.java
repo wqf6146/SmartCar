@@ -2,8 +2,6 @@ package com.vise.xsnow.net.mode;
 
 /**
  * @Description: API Code，包含Http/Request/Response
- * @author: <a href="http://xiaoyaoyou1212.360doc.com">DAWI</a>
- * @date: 2016-12-30 18:11
  */
 public class ApiCode {
 

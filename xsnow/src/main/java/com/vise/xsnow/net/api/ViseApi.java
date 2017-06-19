@@ -56,8 +56,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 网络操作入口
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-04 19:38
  */
 public class ViseApi {
     private static Context context;

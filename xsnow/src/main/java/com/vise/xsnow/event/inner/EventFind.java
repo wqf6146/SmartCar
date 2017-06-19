@@ -11,8 +11,6 @@ import rx.subscriptions.CompositeSubscription;
 
 /**
  * @Description: 根据注解查找事件接收方法
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-29 19:26
  */
 public class EventFind {
     public static EventComposite findAnnotatedSubscriberMethods(Object listenerClass, CompositeSubscription compositeSubscription) {

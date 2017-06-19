@@ -7,8 +7,6 @@ import rx.Observable;
 
 /**
  * @Description: 缓存策略--只取缓存
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:29.
  */
 public class OnlyCacheStrategy<T> extends CacheStrategy<T> {
     @Override

@@ -12,8 +12,6 @@ import java.util.Date;
 
 /**
  * @Description: 数据库操作
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 22:19.
  */
 public class DownDb {
     public static final class RecordTable {

@@ -11,8 +11,6 @@ import com.vise.xsnow.common.ViseConfig;
 
 /**
  * @Description: SharedPreferences存储，支持对象加密存储
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-19 15:12
  */
 public class SpCache implements ICache {
     private SharedPreferences sp;

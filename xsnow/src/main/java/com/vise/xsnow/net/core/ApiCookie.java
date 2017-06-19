@@ -13,8 +13,6 @@ import okhttp3.HttpUrl;
 
 /**
  * @Description: Cookie
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 21:05.
  */
 public class ApiCookie implements CookieJar {
 

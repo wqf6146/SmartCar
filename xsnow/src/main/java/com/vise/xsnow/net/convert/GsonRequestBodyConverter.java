@@ -16,8 +16,6 @@ import retrofit2.Converter;
 
 /**
  * @Description: T to RequestBody
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-04 18:05
  */
 final class GsonRequestBodyConverter<T> implements Converter<T, RequestBody> {
     private static final MediaType MEDIA_TYPE = MediaType.parse("init/json; charset=UTF-8");

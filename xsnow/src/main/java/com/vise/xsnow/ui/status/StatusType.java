@@ -2,8 +2,6 @@ package com.vise.xsnow.ui.status;
 
 /**
  * @Description: 视图显示类型
- * @author: <a href="http://xiaoyaoyou1212.360doc.com">DAWI</a>
- * @date: 2017-03-08 15:53
  */
 public enum StatusType {
     CONTENT(0),//显示内容视图

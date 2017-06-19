@@ -11,8 +11,6 @@ import rx.Observable;
 
 /**
  * @Description: 下载API服务
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/18 22:14.
  */
 public interface DownApiService {
     @GET

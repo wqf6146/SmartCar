@@ -7,8 +7,6 @@ import rx.functions.Func1;
 
 /**
  * @Description: ApiResult<T>转T
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-30 17:55
  */
 public class ApiDataFunc<T> implements Func1<ApiResult<T>, T> {
     public ApiDataFunc() {

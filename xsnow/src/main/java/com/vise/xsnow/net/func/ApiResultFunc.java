@@ -15,8 +15,6 @@ import rx.functions.Func1;
 
 /**
  * @Description: ResponseBody转ApiResult<T>
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-30 17:55
  */
 public class ApiResultFunc<T> implements Func1<ResponseBody, ApiResult<T>> {
     protected Class<T> clazz;

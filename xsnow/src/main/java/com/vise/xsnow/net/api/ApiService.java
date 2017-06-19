@@ -23,8 +23,6 @@ import rx.Observable;
 
 /**
  * @Description: 提供的系列接口
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-30 16:42
  */
 public interface ApiService {
     @POST()

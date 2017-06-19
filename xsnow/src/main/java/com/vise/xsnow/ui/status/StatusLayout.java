@@ -12,8 +12,6 @@ import android.widget.FrameLayout;
 
 /**
  * @Description: 各种状态视图显示布局
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-03-08 15:51
  */
 public class StatusLayout extends FrameLayout {
 

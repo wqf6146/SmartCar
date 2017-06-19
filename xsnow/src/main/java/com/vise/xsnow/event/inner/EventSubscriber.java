@@ -9,8 +9,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 事件订阅者
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-29 19:05
  */
 public class EventSubscriber extends EventHelper {
     private final Object target;

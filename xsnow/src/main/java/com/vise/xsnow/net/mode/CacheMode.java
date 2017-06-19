@@ -2,8 +2,6 @@ package com.vise.xsnow.net.mode;
 
 /**
  * @Description: 缓存模式
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:22.
  */
 public enum CacheMode {
     /**

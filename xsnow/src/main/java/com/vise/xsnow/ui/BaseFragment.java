@@ -14,8 +14,6 @@ import com.vise.xsnow.event.BusFactory;
 
 /**
  * @Description: Fragment基类
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-19 14:52
  */
 public abstract class BaseFragment extends Fragment {
     protected Context mContext;

@@ -19,8 +19,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 下载类型，包含下载URL、下载文件大小及最后修改时间
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 21:54.
  */
 public abstract class DownType {
     public String mUrl;

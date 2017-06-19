@@ -12,8 +12,6 @@ import rx.schedulers.Schedulers;
 
 /**
  * @Description: 缓存策略
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:28.
  */
 public abstract class CacheStrategy<T> implements ICacheStrategy<T> {
     <T> Observable<CacheResult<T>> loadCache(final ApiCache apiCache, final String key, final Class<T>

@@ -19,8 +19,6 @@ import java.util.regex.Pattern;
 
 /**
  * @Description: 磁盘缓存，KEY加密存储，可定制缓存时长
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-19 15:10
  */
 public class DiskCache implements ICache {
     private final String TAG_CACHE = "@createTime{createTime_v}expireMills{expireMills_v}@";

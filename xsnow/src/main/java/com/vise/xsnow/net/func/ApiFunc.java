@@ -9,8 +9,6 @@ import rx.functions.Func1;
 
 /**
  * @Description: ResponseBody转T
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-05 14:39
  */
 public class ApiFunc<T> implements Func1<ResponseBody, T> {
     protected Class<T> clazz;

@@ -7,8 +7,6 @@ import android.view.ViewStub;
 
 /**
  * @Description: 各种状态视图显示管理，可配置网络异常显示视图、无数据显示视图等
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-03-08 15:54
  */
 public class StatusLayoutManager {
     private final Context mContext;

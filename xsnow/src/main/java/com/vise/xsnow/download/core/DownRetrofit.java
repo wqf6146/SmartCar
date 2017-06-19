@@ -12,8 +12,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * @Description: 下载Retrofit
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-17 15:20
  */
 public class DownRetrofit {
 

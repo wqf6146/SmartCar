@@ -13,8 +13,6 @@ import rx.Subscriber;
 
 /**
  * @Description: API统一订阅者，采用弱引用管理上下文，防止内存泄漏
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-03 14:07
  */
 public abstract class ApiSubscriber<T> extends Subscriber<T> {
     public WeakReference<Context> contextWeakReference;

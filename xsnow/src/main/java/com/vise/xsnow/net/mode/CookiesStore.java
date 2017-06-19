@@ -24,8 +24,6 @@ import okhttp3.HttpUrl;
 
 /**
  * @Description: Cookie仓库
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 17:57.
  */
 public class CookiesStore {
     private final Map<String, ConcurrentHashMap<String, Cookie>> cookies;
