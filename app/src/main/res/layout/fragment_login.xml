@@ -183,8 +183,10 @@
         app:layout_heightPercent="25%"
         app:layout_widthPercent="100%"
         android:orientation="vertical"
+        android:layout_height="0dp"
         android:layout_alignParentBottom="true"
-        android:layout_height="0dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
         <com.yhkj.smartcar.view.PercentLinearLayout
             android:layout_height="0dp"
             android:orientation="vertical"

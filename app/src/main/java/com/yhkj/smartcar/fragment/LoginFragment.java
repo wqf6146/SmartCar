@@ -7,6 +7,7 @@ import android.text.Editable;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -14,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.vise.log.ViseLog;
 import com.vise.xsnow.database.DBManager;
 import com.vise.xsnow.net.callback.ApiCallback;
 import com.vise.xsnow.net.exception.ApiException;

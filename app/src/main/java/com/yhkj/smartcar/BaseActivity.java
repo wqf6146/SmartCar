@@ -54,11 +54,11 @@ public abstract class BaseActivity extends SupportActivity {
         super.onCreate(savedInstanceState);
         mContext = this;
         AppManager.getInstance().addActivity(this);
+
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
         tintManager.setNavigationBarTintEnabled(true);
         tintManager.setStatusBarTintResource(mStatusBar);
-
 //        IntentFilter filter = new IntentFilter();
 //        filter.addAction(EXITACTION);
 //        registerReceiver(exitReceiver, filter);

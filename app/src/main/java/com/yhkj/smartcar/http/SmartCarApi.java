@@ -1,6 +1,8 @@
 package com.yhkj.smartcar.http;
 
 import android.content.Context;
+
+import com.vise.log.ViseLog;
 import com.yhkj.smartcar.App;
 import com.yhkj.smartcar.http.api.ApiService;
 import com.vise.xsnow.net.api.ViseApi;

@@ -12,7 +12,6 @@ import com.yhkj.smartcar.R;
 import com.yhkj.smartcar.adapter.MessageAdapter;
 import com.yhkj.smartcar.bean.MessageBean;
 import com.yhkj.smartcar.http.SmartCarApi;
-import com.yhkj.smartcar.utils.CommonUtils;
 
 import butterknife.Bind;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
